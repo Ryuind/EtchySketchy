@@ -1,0 +1,125 @@
+body {
+	background-color:  #1b2735;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+}
+
+button {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 50px;
+	background: #fff;
+	border-radius: 999px;
+}
+button:hover {
+	animation: burn 1000ms ease-out forwards;
+}
+button:hover::before {
+	content: '';
+	position: absolute;
+	left: 40px;
+	width: 100px;
+	height: 40px;
+	background: rgba(255, 230, 110, 1);
+	border-radius: 100%;
+	animation: flare 1000ms ease-out forwards;
+}
+button:hover::after {
+	content: '';
+	position: absolute;
+	right: 40px;
+	width: 100px;
+	height: 40px;
+	background: rgba(255, 230, 110, 1);
+	border-radius: 100%;
+	animation: flare 1000ms ease-out forwards;
+}
+@keyframes flare {
+	100% {
+		transform: translateY(-20px) scale(1.5);
+		filter: blur(10px);
+		opacity: 0;
+   }
+}
+@keyframes burn {
+	0% {
+		color: rgba(255, 130, 110, 1);
+		background: rgba(255, 230, 110, 1);
+		box-shadow: 0 0 5px 0 rgba(200, 0, 10, 1), 0 0 5px 0 rgba(230, 30, 10, 0.8), 0 0 5px 0 rgba(230, 230, 10, 0.6);
+   }
+	100% {
+		color: rgba(0, 0, 0, 1);
+		background: rgba(255, 255, 255, 1);
+		box-shadow: 0 -35px 40px 30px rgba(255, 130, 10, 0), 0 -30px 30px 10px rgba(230, 30, 10, 0), 0 -20px 10px 0 rgba(255, 255, 10, 0);
+   }
+}
+.pokeBtn {
+	margin-top: 150px;
+	margin-left: -400px;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+
+.container {
+	margin-top: 200px;
+	margin-left: 300px;
+	 /* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/clouds.jpg);*/
+	animation: clouds-moving infinite 220s;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+	animation-timing-function: linear;
+}
+
+.header {
+	font-family: 'Coiny', cursive;
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;	
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/clouds.jpg);
+	background-size: auto;
+	background-attachment: unset;
+	position: absolute;
+	width: 80%;
+	margin-left: -500px;
+	margin-top: -500px;
+	font-size: 80px;
+	animation: clouds-moving infinite 220s;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+	animation-timing-function: linear;
+	text-align: center;
+}
+@keyframes clouds-moving {
+	0% {
+		background-position: 0%;	
+	}
+	50% {
+		background-position: 100%;	
+	}
+	100% {
+		background-position: 0%;
+	}
+}
+.attribute {
+	position: relative;
+	font-size: 26px;
+	text-align: center;
+}
+
+
+
+.foot{
+	position:absolute;
+	margin-top: 600px;
+	margin-left: -800px;
+	color: white;
+}
