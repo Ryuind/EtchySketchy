@@ -16,7 +16,6 @@ body {
 
 button {
 	position: absolute;
-	
 	display: inline-block;
 	justify-content: center;
 	align-items: center;
@@ -109,8 +108,7 @@ button:hover::after {
 	background-attachment: unset;
 	position: absolute;
 	width: 80%;
-	margin-left: -400px;
-	margin-top: -500px;
+	margin: -200px 0px 0px -100px;
 	font-size: 80px;
 	animation: clouds-moving infinite 220s;
 	animation-fill-mode: forwards;
@@ -139,7 +137,6 @@ button:hover::after {
 
 .foot{
 	position:absolute;
-	margin-top: 400px;
-	margin-left: -400px;
+	margin: 300px 0px 0px 0px;
 	color: white;
 }
