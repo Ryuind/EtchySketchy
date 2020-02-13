@@ -8,15 +8,38 @@ body {
 	position: absolute;
 }
 
-button {
+.page-wrap {
+	width: 960px;
+	margin: 0 auto;
 	position: relative;
-	display: flex;
+	}
+
+button {
+	position: absolute;
+	
+	display: inline-block;
 	justify-content: center;
 	align-items: center;
 	width: 200px;
 	height: 50px;
 	background: #fff;
 	border-radius: 999px;
+}
+.newGrid {
+	margin-top: 0px;
+	margin-left: 0px;
+}
+.blackBtn {
+	margin-top: 60px;
+	margin-left: 0px;
+}
+.grayBtn {
+	margin-top: 120px;
+	margin-left: 0px;
+}
+.pokeBtn {
+	margin-top: 180px;
+	margin-left: 0px;
 }
 button:hover {
 	animation: burn 1000ms ease-out forwards;
@@ -60,10 +83,7 @@ button:hover::after {
 		box-shadow: 0 -35px 40px 30px rgba(255, 130, 10, 0), 0 -30px 30px 10px rgba(230, 30, 10, 0), 0 -20px 10px 0 rgba(255, 255, 10, 0);
    }
 }
-.pokeBtn {
-	margin-top: 150px;
-	margin-left: -400px;
-}
+
 
 
 
@@ -71,8 +91,8 @@ button:hover::after {
 @import url('https://fonts.googleapis.com/css?family=Coiny');
 
 .container {
-	margin-top: 200px;
-	margin-left: 300px;
+	margin-top: -200px;
+	margin-left:600px;
 	 /* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/clouds.jpg);*/
 	animation: clouds-moving infinite 220s;
 	animation-fill-mode: forwards;
@@ -89,7 +109,7 @@ button:hover::after {
 	background-attachment: unset;
 	position: absolute;
 	width: 80%;
-	margin-left: -500px;
+	margin-left: -400px;
 	margin-top: -500px;
 	font-size: 80px;
 	animation: clouds-moving infinite 220s;
@@ -119,7 +139,7 @@ button:hover::after {
 
 .foot{
 	position:absolute;
-	margin-top: 600px;
-	margin-left: -800px;
+	margin-top: 400px;
+	margin-left: -400px;
 	color: white;
 }
