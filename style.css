@@ -26,19 +26,19 @@ button {
 	
 }
 .newGrid {
-	margin-top: 30px;
+	margin-top: 230px;
 	margin-left: 0px;
 }
 .blackBtn {
-	margin-top: 90px;
+	margin-top: 290px;
 	margin-left: 0px;
 }
 .grayBtn {
-	margin-top: 150px;
+	margin-top: 350px;
 	margin-left: 0px;
 }
 .pokeBtn {
-	margin-top: 210px;
+	margin-top: 410px;
 	margin-left: 0px;
 }
 button:hover {
@@ -91,8 +91,8 @@ button:hover::after {
 @import url('https://fonts.googleapis.com/css?family=Coiny');
 
 .container {
-	margin-top: -200px;
-	margin-left:600px;
+	margin-top: 200px;
+	margin-left: 400px;
 	 /* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/clouds.jpg);*/
 	animation: clouds-moving infinite 220s;
 	animation-fill-mode: forwards;
@@ -109,7 +109,7 @@ button:hover::after {
 	background-attachment: unset;
 	position: absolute;
 	width: 80%;
-	margin: -225px 0px 0px -100px;
+	margin: 0px 0px 0px -100px;
 	font-size: 80px;
 	animation: clouds-moving infinite 220s;
 	animation-fill-mode: forwards;
@@ -138,6 +138,6 @@ button:hover::after {
 
 .foot{
 	position:absolute;
-	margin: 300px 0px 0px 0px;
+	margin: 500px 0px 0px 0px;
 	color: white;
 }
